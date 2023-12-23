@@ -41,6 +41,11 @@ button {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .team,
 .portfolio {
   margin-bottom: 72px;
@@ -53,13 +58,26 @@ button {
 .header {
 }
 
+.header-container {
+  display: flex;
+}
 .header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
 }
 
 .header-nav-list {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav-list-item {
+  margin-right: 40px;
+}
+
+.header-nav-list-item:last-child {
+  margin-right: 0;
 }
 
 .header-logo {
@@ -71,6 +89,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-color {
@@ -92,6 +111,9 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-link:focus {
@@ -107,9 +129,19 @@ button {
 }
 
 .header-address-list {
+  display: flex;
+  align-items: center;
 }
 
 .header-address-list-item {
+  margin-right: 40px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-address-list-item:last-child {
+  margin-right: 0;
 }
 
 .header-address-link {
@@ -133,6 +165,11 @@ button {
 
 .hero-background {
   background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+}
+
+.hero-container {
 }
 
 .hero {
