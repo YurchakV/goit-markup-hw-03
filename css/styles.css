@@ -31,6 +31,9 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+img {
+  display: block;
+}
 
 /* common styles */
 .container {
@@ -70,6 +73,7 @@ button {
 /* Header */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -199,6 +203,7 @@ button {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -211,9 +216,11 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  display: inline-flex;
+  display: block;
   padding: 16px 32px;
-  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
   border: 0;
   border-radius: 4px;
   background: #4d5ae5;
@@ -290,12 +297,15 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.name-position {
+  padding: 32px 0;
 }
 
 .team-title {
@@ -306,6 +316,8 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-descr {
@@ -316,6 +328,7 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: center;
 }
 
 /* Portfolio */
