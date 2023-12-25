@@ -53,6 +53,20 @@ button {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 
 .header {
@@ -183,6 +197,8 @@ button {
   letter-spacing: 1.12px;
   width: 496px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -195,6 +211,13 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  border: 0;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-button:focus {
   background-color: #404bbf;
@@ -207,9 +230,13 @@ button {
 /* Features */
 
 .features-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .features-list-item {
+  width: 264px;
 }
 
 .features-title {
@@ -220,6 +247,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -250,10 +278,24 @@ button {
 }
 
 .team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  display: inline-flex;
+  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
